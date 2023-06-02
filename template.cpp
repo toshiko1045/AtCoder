@@ -44,22 +44,3 @@ void mypmii(map<int,int> m){
         cout << itr->first << " " << itr->second << endl;
     }
 }
-
-
-int main(){
-    vector<int>    v1 = vector<int>(5,11);
-    myprivi(v1);
-    vector<ll>     v2 = vector<ll>(5,11);
-    myprivll(v2);
-    vector<double> v3 = vector<double>(5.,11.);
-    myprivd(v3);
-    vector<ld>     v4 = vector<ld>(5.,11.);
-    myprivld(v4);
-    pair<int,int>  p  = make_pair(1,2);
-    mypripii(p);
-    map<int,int>m;
-    m[1] = 11;
-    m[11]= 1111;
-    m[555]=555555;
-    myprimii(m);
-}
