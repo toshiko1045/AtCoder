@@ -44,3 +44,9 @@ void mypmii(map<int,int> m){
         cout << itr->first << " " << itr->second << endl;
     }
 }
+
+ll powll(ll x, ll y){
+    ll r = 1;
+    for(int i=0;i<y;i++) r*=x;
+    return r;
+}
