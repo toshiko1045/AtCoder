@@ -7,5 +7,9 @@ int a,b,c,d;
 
 int main(){
     cin >> a >> b >> c >> d;
-    if(a)
+    if(a*60+b <= c*60+d){
+        cout << "Takahashi" << endl;
+    }else{
+        cout << "Aoki" << endl;
+    }
 }
