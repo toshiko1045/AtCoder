@@ -18,18 +18,6 @@ template<class T, class... A> void println(const T& first, const A&... rest){pri
 
 
 int main(){
-    print("a", "\n");
-    print(1, "\n");
-    println("a");
-    println(1);
-
-    vector<vector<int>> v2(5, vector<int>(3));
-    for(int i=0;i<v2.size();i++) for(int j=0;j<v2.at(i).size();j++) v2.at(i).at(j) = i+j;
-    print(v2, "\n");
-    println(v2) ;
-
-    pair<string, int> p("hoge", 234);
-    print(p);
-
+   
     return 0;
 }
