@@ -24,9 +24,45 @@ template<class T> bool isinvec(const vector<T> vec, const T& value){return find(
 #pragma endregion
 
 vector<int> calchand(vector<int> v1, vector<int> v2) {
-  vector<vector<int>> m =
-      vector<vector<int>>(v2.size(), vector<int>(v1.size() + v2.size(), 0));
-    
+  int v1s = v1.size();
+  int v2s = v2.size();
+  int ts = v1s + v2s;
+  vector<vector<int>> m = vector<vector<int>>(v2s, vector<int>(ts, 0));
+  for (int i = 0; i < v2s; i++) {
+    for (int j = 0; j < v1s; j++) {
+      int t = v2.at(v2s - i - 1) * v1.at(v1s - j - 1);
+      if (t >= 10) {
+        m.at(i).at(ts - j - i - 1) += t % 10;
+        m.at(i).at(ts - j - i - 2) += t / 10;
+      } else {
+        m.at(i).at(ts - j - i - 1) += t;
+      }
+    }
+  }
+  vector<int> ans = vector<int>(v1.size() + v2.size(), 0);
+  for (int i = 0; i < v2.size(); i++) {
+    for (int j = 0; j < v1.size() + v2.size(); j++) {
+      ans.at(j) += m.at(i).at(j);
+    }
+  }
+  return ans;
 }
 
-int main() {}
+vector<int> splitdigit(int n){
+  vector<int> ans;
+  while(true){
+    int t=  n%10;
+    ans.insert(ans.begin(),t);
+    n = (n - t) / 10;
+    if (n == 0) break;
+  }
+  return ans;
+}
+
+int main() {
+  int N;
+  cin >> N;
+  for (int i = 1; i <= N; i++) {
+       
+  }
+}
