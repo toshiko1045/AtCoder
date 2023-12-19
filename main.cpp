@@ -24,16 +24,5 @@ template<class T> bool isinvec(const vector<T> vec, const T& value){return find(
 #pragma endregion
 
 int main() {
-  ull N;
-  cin >> N;
-  ull a = 1;
-  for (ull i = 1; i <= N; i++) {
-    a = a * i;
-    while (a % 10 == 0) {
-      a = a / 10;
-    }
-    a = a % 1000000000;
-    println(i, " ", a);
-  }
-  println(a);
+  
 }
