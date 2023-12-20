@@ -23,6 +23,4 @@ template<class T> bool isinvec(const vector<T> vec, const T& value){return find(
 // clang-format on
 #pragma endregion
 
-int main() {
- 
-}
+int main() {}
