@@ -2,4 +2,8 @@
     "C_Cpp.clang_format_path": "/usr/bin/clang-format",
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
+    "files.associations": {
+        "*.ts": "typescript",
+        "vector": "cpp"
+    },
 }

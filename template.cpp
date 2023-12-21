@@ -5,6 +5,8 @@ using namespace std;
 typedef long long ll;
 typedef unsigned long long ull;
 typedef long double ld;
+#define rep(i,s,e) for (int i = s; i < (int)(e); i++)
+#define all(obj) (obj).begin(), (obj).end()
 void print(){cout << "";}
 void println(){cout << endl;}
 template<class T> void print(const T& value){cout << value;}
