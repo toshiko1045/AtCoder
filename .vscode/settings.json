@@ -4,6 +4,7 @@
     "editor.formatOnType": true,
     "files.associations": {
         "*.ts": "typescript",
-        "vector": "cpp"
+        "array": "cpp",
+        "string_view": "cpp"
     },
 }
