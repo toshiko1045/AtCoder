@@ -31,6 +31,4 @@ template<class T> T chbase(T a, int n, int m){T sum=0;for(T i=0;a!=0;i++){T t=a%
 // clang-format on
 #pragma endregion
 
-int main() {
-    
-}
+int main() {}
