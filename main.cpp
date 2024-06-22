@@ -1,10 +1,13 @@
 #pragma region template
 // clang-format off
 #include <bits/stdc++.h>
+#include <atcoder/modint>
 using namespace std;
+using namespace atcoder;
 typedef long long ll;
 typedef unsigned long long ull;
 typedef long double ld;
+typedef modint998244353 mint;
 #define rep(i,s,e) for (int i = s; i <= (int)(e); i++)
 #define rrep(i,s,e) for (int i = s; i >= (int)(e); i--)
 #define all(obj) (obj).begin(), (obj).end()
@@ -31,4 +34,6 @@ template<class T> T chbase(T a, int n, int m){T sum=0;for(T i=0;a!=0;i++){T t=a%
 // clang-format on
 #pragma endregion
 
-int main() {}
+int main() {
+    
+}
